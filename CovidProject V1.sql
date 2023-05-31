@@ -1,3 +1,11 @@
+--This SQL file is using imported data sets from a Covid 
+statistics site. The information was cleaned in Excel and imported into Management Studio
+to work with the data via tables and queries. 
+
+
+
+
+
 --Total Cases VERSUS Total Deaths
 SELECT Location, date, total_cases, new_cases, total_deaths, ( total_deaths/total_cases) * 100 AS DeathPercentage
 FROM Covid19Project..CovidDeaths
